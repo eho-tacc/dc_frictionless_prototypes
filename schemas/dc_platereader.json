@@ -1,0 +1,93 @@
+{
+    "primaryKey": ["experiment_id", "sample_id"],
+    "fields": [
+        {
+            "name": "_id",
+            "type": "string"
+        },
+        {
+            "name": "sample_id",
+            "type": "string"
+        },
+        {
+            "name": "experiment_reference",
+            "type": "string"
+        },
+        {
+            "name": "experiment_id",
+            "type": "string"
+        },
+        {
+            "name": "lab",
+            "type": "string"
+        },
+        {
+            "name": "replicate",
+            "type": "integer"
+        },
+        {
+            "name": "replicate_group",
+            "type": "string"
+        },
+        {
+            "name": "replicate_group_string",
+            "type": "string"
+        },
+        {
+            "name": "strain",
+            "type": "string"
+        },
+        {
+            "name": "strain_name",
+            "type": "any"
+        },
+        {
+            "name": "standard_type",
+            "type": "any"
+        },
+        {
+            "name": "control_type",
+            "type": "any"
+        },
+        {
+            "name": "media_type",
+            "type": "string"
+        },
+        {
+            "name": "inducer_type",
+            "type": "any"
+        },
+        {
+            "name": "inducer_concentration",
+            "type": "any"
+        },
+        {
+            "name": "inducer_concentration_unit",
+            "type": "any"
+        },
+        {
+            "name": "sample_contents",
+            "type": "string"
+        },
+        {
+            "name": "temperature",
+            "type": "number"
+        },
+        {
+            "name": "temperature_unit",
+            "type": "string"
+        },
+        {
+            "name": "timepoint",
+            "type": "number"
+        },
+        {
+            "name": "timepoint_unit",
+            "type": "string"
+        },
+        {
+            "name": "OD600",
+            "type": "number"
+        }
+    ]
+}
