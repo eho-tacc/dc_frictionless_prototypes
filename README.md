@@ -2,9 +2,13 @@
 
 ## Installation
 
-Validation was performed using [frictionless-py](https://github.com/frictionlessdata/frictionless-py) `5bd794179dcbaab080e1e0d0e692b6c875e44d43`. As of writing (1/13/21), this is the only stable commit that avoids [#609](https://github.com/frictionlessdata/frictionless-py/issues/609) and [#616](https://github.com/frictionlessdata/frictionless-py/issues/616).
+Validation was performed using [frictionless-py](https://github.com/frictionlessdata/frictionless-py) v4.2.1. ~~As of writing (1/13/21), `5bd794179dcbaab080e1e0d0e692b6c875e44d43` is the only stable commit that avoids [#609](https://github.com/frictionlessdata/frictionless-py/issues/609) and [#616](https://github.com/frictionlessdata/frictionless-py/issues/616).~~
 
-# Miscellaneous Logs
+## Validate Using Frictionless CLI
+
+```bash
+$ frictionless validate datapackage.json
+```
 
 ## Pull Local Copy of Examplary Dataset
 
