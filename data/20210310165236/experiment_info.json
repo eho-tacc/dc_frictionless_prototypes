@@ -1,0 +1,23 @@
+{
+  "_id": "5fd93474dc2eb8e38d935efa",
+  "experiment_id": "experiment.ginkgo.42587",
+  "experiment_reference": "NovelChassis-EcN-WT-1",
+  "parameters": [
+    {
+      "recovery_info": []
+    }
+  ],
+  "overnight_growth": {
+    "value": 18.0,
+    "unit": "hour"
+  },
+  "recovery_loops": [],
+  "fc_channels": [],
+  "status_upstream": [
+    {
+      "experiment_id": "experiment.ginkgo.42587",
+      "data_types": "P-RD-",
+      "comparison_passed": true
+    }
+  ]
+}

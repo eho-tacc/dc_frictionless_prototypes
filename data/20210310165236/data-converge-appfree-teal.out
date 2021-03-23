@@ -1,0 +1,24 @@
+container_exec reshg/data-converge-app:0.7.2 /opt/conda/envs/sd2-data_converge/bin/python /data_converge/src/data_converge/run_data_converge.py NovelChassis-EcN-WT-1 . hpc_path --no_sub_dir
+
+setting to docker
+hey, it's docker
+Pulling reshg/data-converge-app:0.7.2. Set NO_PULL=1 to prevent this.
+docker run OPTS CONTAINER_IMAGE COMMAND PARAMS: --rm --user=0:1002 -v /data/jobs/sd2eadm/job-f43a514f-6209-4a48-8e96-209034eb31bb-007-data-converge-appfree-teal:/data:rw -w /data reshg/data-converge-app:0.7.2 /opt/conda/envs/sd2-data_converge/bin/python /data_converge/src/data_converge/run_data_converge.py NovelChassis-EcN-WT-1 . hpc_path --no_sub_dir
+processing data sets...
+cfu :  no records
+[]
+rna :  ok. unique sample ids: 384
+['NovelChassis-EcN-WT-1__rnaseq_meta.csv']
+pr :  ok. unique sample ids: 576
+['NovelChassis-EcN-WT-1__platereader.csv']
+fc_etl :  no records
+[]
+fc_raw :  no records
+[]
+summarizing data sets...
+hashing data sets...
+MD5: 5dcd027ae1cadc1114408c3f2e51181d
+MD5: d93c8a16724a8977920b4e0f385bb92f
+making product record...
+finished!
+passing archive_system step

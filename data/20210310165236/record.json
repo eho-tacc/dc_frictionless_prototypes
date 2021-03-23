@@ -1,0 +1,28 @@
+{
+  "data_converge version": "117-deploy-app-to-new-system 7874b92 2021-03-10 10:17:01 -0600",
+  "experiment_reference": "NovelChassis-EcN-WT-1",
+  "date_run": "20210310165756",
+  "output_dir": ".",
+  "tacc_path_type": "hpc_path",
+  "files": [
+    {
+      "name": "NovelChassis-EcN-WT-1__rnaseq_meta.csv",
+      "summary_name": "NovelChassis-EcN-WT-1__rnaseq_meta__summary.json",
+      "unique sample ids": 384,
+      "hash_md5": "5dcd027ae1cadc1114408c3f2e51181d"
+    },
+    {
+      "name": "NovelChassis-EcN-WT-1__platereader.csv",
+      "summary_name": "NovelChassis-EcN-WT-1__platereader__summary.json",
+      "unique sample ids": 576,
+      "hash_md5": "d93c8a16724a8977920b4e0f385bb92f"
+    }
+  ],
+  "status": {
+    "cfu": "no records",
+    "rna": "ok. unique sample ids: 384",
+    "pr": "ok. unique sample ids: 576",
+    "fc_etl": "no records",
+    "fc_raw": "no records"
+  }
+}

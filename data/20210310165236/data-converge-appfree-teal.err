@@ -1,0 +1,2 @@
+./data-converge-appfree-teal.ipcexe: line 47: module: command not found
+which: no singularity in (/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/taco/.local/bin:/home/taco/bin)
