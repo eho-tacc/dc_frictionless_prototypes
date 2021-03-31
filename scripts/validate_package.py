@@ -3,7 +3,7 @@ import frictionless as fl
 
 
 def main():
-    report = fl.validate_package('datapackage.json', nopool=True)
+    report = fl.validate_package('datapackage.json')
     if report.valid:
         print("Is valid")
     else:
