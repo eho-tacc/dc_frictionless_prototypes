@@ -1,0 +1,34 @@
+container_exec reshg/data-converge-app:0.7.1 /opt/conda/envs/sd2-data_converge/bin/python /data_converge/src/data_converge/run_data_converge.py YeastSTATES-Activator-Circuit-Dox-Growth-Curves-30C . hpc_path --no_sub_dir
+/opt/apps/tacc-singularity/2.6.0/bin/singularity
+singularity exec: reshg/data-converge-app:0.7.1 /opt/conda/envs/sd2-data_converge/bin/python /data_converge/src/data_converge/run_data_converge.py YeastSTATES-Activator-Circuit-Dox-Growth-Curves-30C . hpc_path --no_sub_dir
+Docker image path: index.docker.io/reshg/data-converge-app:0.7.1
+Cache folder set to /work/06935/sgopal/singularity_cache/docker
+Creating container runtime...
+Exploding layer: sha256:852e50cd189dfeb54d97680d9fa6bed21a6d7d18cfb56d6abfe2de9d7f173795.tar.gz
+Exploding layer: sha256:a6236801494d5ca9acfae6569427398c2942c031375b96cac887cafe1de5a09b.tar.gz
+Exploding layer: sha256:679c171d6942954a759f2d3a1dff911321940f23b0cdbe1d186f36bef0025124.tar.gz
+Exploding layer: sha256:36fcb3edf68c2a273b2ea7d1ba8beaef0c1cf3ec9ad08b24aa51c70d999d1294.tar.gz
+Exploding layer: sha256:68e3aa8e72f902c8cbdc7449fc12a457c46e24eae48cdb80f37063500c2a8d24.tar.gz
+Exploding layer: sha256:a1bf7f8e595f0089485e78b2201f4ab3fa7056c2cdcaf1d2c7fdd63a7d2eaffe.tar.gz
+Exploding layer: sha256:bd426d219e1386623e215c32381e80b12efb9108f96e6faf81333515d8127c90.tar.gz
+Exploding layer: sha256:169e9c8aa61df0a3f8d79c9d6f763d5f5382882e7fc2866e5410442d2171c580.tar.gz
+Exploding layer: sha256:5eb66f7d7a204ccc8e0bf04aa856a2f1285ebf7d26f46145324c8ca0b440713c.tar.gz
+Exploding layer: sha256:ef919f12c9b4c02546d4ea24c64fad8e2abb66ac8cd907997da39df9c0d44f99.tar.gz
+processing data sets...
+cfu :  no records
+[]
+rna :  no records
+[]
+pr :  ok. unique sample ids: 610
+['YeastSTATES-Activator-Circuit-Dox-Growth-Curves-30C__platereader.csv']
+fc_etl :  no records
+[]
+fc_raw :  no records
+[]
+summarizing data sets...
+hashing data sets...
+MD5: bcada5180a64d16947263c343e2a276c
+making experiment record...
+making product record...
+finished!
+passing archive_system step

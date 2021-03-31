@@ -1,0 +1,32 @@
+{
+  "data_converge version": "production fa11633 2020-12-17 15:38:50 -0600",
+  "experiment_reference": "YeastSTATES-Activator-Circuit-Dox-Growth-Curves-30C",
+  "date_run": "20210211174643",
+  "output_dir": ".",
+  "tacc_path_type": "hpc_path",
+  "files": [
+    {
+      "name": "YeastSTATES-Activator-Circuit-Dox-Growth-Curves-30C__platereader.csv",
+      "summary_name": "YeastSTATES-Activator-Circuit-Dox-Growth-Curves-30C__platereader__summary.json",
+      "unique sample ids": 610,
+      "hash_md5": "bcada5180a64d16947263c343e2a276c"
+    }
+  ],
+  "status": {
+    "cfu": "no records",
+    "rna": "no records",
+    "pr": "ok. unique sample ids: 610",
+    "fc_etl": "no records",
+    "fc_raw": "no records"
+  },
+  "status_upstream": [
+    {
+      "experiment_id": "experiment.transcriptic.2020-12-11-YeastSTATES-Activator-Circuit-Dox-Growth-Curves-30C"
+    },
+    {
+      "experiment_id": "experiment.transcriptic.r1fbmhdxwjbzr4",
+      "data_types": "P----",
+      "comparison_passed": true
+    }
+  ]
+}
