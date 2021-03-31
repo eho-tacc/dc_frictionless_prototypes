@@ -18,7 +18,7 @@
         {
             "path": [
                 "data/20210310165236/NovelChassis-EcN-WT-1__platereader.csv",
-                "data/20201029172044/NovelChassis-Bacillus-WT-Characterization__platereader.csv"
+                "data/20210211174214/YeastSTATES-Activator-Circuit-Dox-Growth-Curves-30C__platereader.csv"
             ],
             "name": "platereader",
             "profile": "tabular-data-resource",

@@ -1,5 +1,5 @@
 {
-    "primaryKey": ["experiment_id", "sample_id", "replicate"],
+    "primaryKey": ["experiment_id", "sample_id"],
     "fields": [
         {
             "name": "_id",
