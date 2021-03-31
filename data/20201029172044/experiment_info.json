@@ -1,0 +1,10 @@
+{
+  "_id": "5e1f18ca22c9c6ed65695a2b",
+  "experiment_id": "experiment.ginkgo.29649",
+  "experiment_reference": "NovelChassis-Bacillus-WT-Characterization",
+  "overnight_growth": {
+    "unit": "hour",
+    "value": 16.0
+  },
+  "recovery_loops": []
+}

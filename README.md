@@ -27,3 +27,9 @@ YeastSTATES-Activator-Circuit-Dox-Growth-Curves-30C:
 scp -r eho@stampede2.tacc.utexas.edu:/work/projects/SD2E-Community/prod/projects/sd2e-project-43/reactor_outputs/complete/YeastSTATES-Activator-Circuit-Dox-Growth-Curves-30C/20210211174214 ./data
 ```
 
+NovelChassis-Bacillus-WT-Characterization:
+```bash
+scp -r eho@stampede2.tacc.utexas.edu:/work/projects/SD2E-Community/prod/projects/sd2e-project-43/reactor_outputs/complete/NovelChassis-Bacillus-WT-Characterization/20201029172044 ./data
+```
+
+

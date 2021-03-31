@@ -1,0 +1,35 @@
+container_exec reshg/data-converge-app:0.1.0 /opt/conda/envs/sd2-data_converge/bin/python /data_converge/src/data_converge/run_data_converge.py NovelChassis-Bacillus-WT-Characterization . hpc_path --no_sub_dir
+/opt/apps/tacc-singularity/2.6.0/bin/singularity
+singularity exec: reshg/data-converge-app:0.1.0 /opt/conda/envs/sd2-data_converge/bin/python /data_converge/src/data_converge/run_data_converge.py NovelChassis-Bacillus-WT-Characterization . hpc_path --no_sub_dir
+Docker image path: index.docker.io/reshg/data-converge-app:0.1.0
+Cache folder set to /work/06935/sgopal/singularity_cache/docker
+Creating container runtime...
+Exploding layer: sha256:68ced04f60ab5c7a5f1d0b0b4e7572c5a4c8cce44866513d30d9df1a15277d6b.tar.gz
+Exploding layer: sha256:9c388eb6d33c40662539172f0d9a357287bd1cd171692ca5c08db2886bc527c3.tar.gz
+Exploding layer: sha256:96cf53b3a9dd496f4c91ab86eeadca2c8a31210c2e5c2a82badbb0dcf8c8f76b.tar.gz
+Exploding layer: sha256:999a97e22cefa1eedb092c23a726b8e3b137bb8bbc0d30ca3907378287c050a0.tar.gz
+Exploding layer: sha256:cd0b7880938f8e92e5d629ae06a90dc76071bb23050dd005a5f64d52d379d4b0.tar.gz
+Exploding layer: sha256:a8d56c1166e600a3cfef9aeffef44587d3b8b222447fb5bddf9083e31cbc4693.tar.gz
+Exploding layer: sha256:3179797e27969f9e6683e11a31ffbd1f6b5725fc34ffe51bfc568d43149dda77.tar.gz
+Exploding layer: sha256:3a0bc1ed03a8837a021cf72eec71eb893d54b1f71e8938a6faedd27b6d08f87a.tar.gz
+Exploding layer: sha256:c711b7911861ccfd36a5f5a65a37137d600c3b3c0bcc527931229bfb0e81c33b.tar.gz
+Exploding layer: sha256:9318fe5d63a8c51c1c9666998e60a664d588ad836407893f0834c0ada4f30b1c.tar.gz
+processing data sets...
+cfu :  no records
+[]
+rna :  ok. unique sample ids: 72
+['NovelChassis-Bacillus-WT-Characterization__rnaseq_meta.csv']
+pr :  ok. unique sample ids: 228
+['NovelChassis-Bacillus-WT-Characterization__platereader.csv']
+fc_etl :  no records
+[]
+fc_raw :  no records
+[]
+summarizing data sets...
+hashing data sets...
+MD5: 152f4678ed1fe453b694ed1c1f252704
+MD5: 70106725e3ec45a7f9ac642220bb4c0b
+making experiment record...
+making product record...
+finished!
+passing archive_system step

@@ -1,0 +1,35 @@
+{
+  "data_converge version": " NA",
+  "experiment_reference": "NovelChassis-Bacillus-WT-Characterization",
+  "date_run": "20201029184955",
+  "output_dir": ".",
+  "tacc_path_type": "hpc_path",
+  "files": [
+    {
+      "name": "NovelChassis-Bacillus-WT-Characterization__rnaseq_meta.csv",
+      "summary_name": "NovelChassis-Bacillus-WT-Characterization__rnaseq_meta__summary.json",
+      "unique sample ids": 72,
+      "hash_md5": "152f4678ed1fe453b694ed1c1f252704"
+    },
+    {
+      "name": "NovelChassis-Bacillus-WT-Characterization__platereader.csv",
+      "summary_name": "NovelChassis-Bacillus-WT-Characterization__platereader__summary.json",
+      "unique sample ids": 228,
+      "hash_md5": "70106725e3ec45a7f9ac642220bb4c0b"
+    }
+  ],
+  "status": {
+    "cfu": "no records",
+    "rna": "ok. unique sample ids: 72",
+    "pr": "ok. unique sample ids: 228",
+    "fc_etl": "no records",
+    "fc_raw": "no records"
+  },
+  "status_upstream": [
+    {
+      "experiment_id": "experiment.ginkgo.29649",
+      "data_types": "P-R--",
+      "comparison_passed": true
+    }
+  ]
+}
