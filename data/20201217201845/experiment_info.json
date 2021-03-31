@@ -1,0 +1,11 @@
+{
+  "_id": "5f4ed066042f3641795af6dd",
+  "experiment_id": "experiment.duke_haase.2020-09-01-Duke-YeastSTATES-Ethanol-Time-Series-LiveDeadClassification",
+  "experiment_reference": "Duke-YeastSTATES-Ethanol-Time-Series-LiveDeadClassification",
+  "parameters": [
+    {
+      "exp_info|overnight_volumes|culture_volume": "200:microliter"
+    }
+  ],
+  "fc_channels": []
+}

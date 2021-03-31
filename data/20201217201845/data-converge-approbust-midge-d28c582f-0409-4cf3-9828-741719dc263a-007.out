@@ -1,0 +1,38 @@
+container_exec reshg/data-converge-app:0.7.1 /opt/conda/envs/sd2-data_converge/bin/python /data_converge/src/data_converge/run_data_converge.py Duke-YeastSTATES-Ethanol-Time-Series-LiveDeadClassification . hpc_path --no_sub_dir
+/opt/apps/tacc-singularity/2.6.0/bin/singularity
+singularity exec: reshg/data-converge-app:0.7.1 /opt/conda/envs/sd2-data_converge/bin/python /data_converge/src/data_converge/run_data_converge.py Duke-YeastSTATES-Ethanol-Time-Series-LiveDeadClassification . hpc_path --no_sub_dir
+Docker image path: index.docker.io/reshg/data-converge-app:0.7.1
+Cache folder set to /work/06935/sgopal/singularity_cache/docker
+Creating container runtime...
+Exploding layer: sha256:852e50cd189dfeb54d97680d9fa6bed21a6d7d18cfb56d6abfe2de9d7f173795.tar.gz
+Exploding layer: sha256:a6236801494d5ca9acfae6569427398c2942c031375b96cac887cafe1de5a09b.tar.gz
+Exploding layer: sha256:679c171d6942954a759f2d3a1dff911321940f23b0cdbe1d186f36bef0025124.tar.gz
+Exploding layer: sha256:36fcb3edf68c2a273b2ea7d1ba8beaef0c1cf3ec9ad08b24aa51c70d999d1294.tar.gz
+Exploding layer: sha256:cbdefdec9f967771d62718fb98e7b3387b49b0e1552777b0e7b2dba0ee2820f8.tar.gz
+Exploding layer: sha256:dae978a7075ffbe8d06a9333e8d7d67116cd73dffe06996232f2bfcbe81e8229.tar.gz
+Exploding layer: sha256:8fdab358a149ebcbc187cf9fd3c55b5a307898d0b369fcecd998cadc7d0914e5.tar.gz
+Exploding layer: sha256:720af3f16af8c5e201537f758210a57a554a53afadedd052f3ab4df391506846.tar.gz
+Exploding layer: sha256:48bd0352ac8469834d6606f664c6445515180696d2e75c789ca8b039dedcbd4b.tar.gz
+Exploding layer: sha256:ef919f12c9b4c02546d4ea24c64fad8e2abb66ac8cd907997da39df9c0d44f99.tar.gz
+processing data sets...
+cfu :  ok. unique sample ids: 219
+['Duke-YeastSTATES-Ethanol-Time-Series-LiveDeadClassification__cfu.csv']
+rna :  no records
+[]
+pr :  no records
+[]
+fc_etl :  no records
+[]
+fc_raw :  ok. unique sample ids: 125
+['Duke-YeastSTATES-Ethanol-Time-Series-LiveDeadClassification__fc_meta.csv', 'Duke-YeastSTATES-Ethanol-Time-Series-LiveDeadClassification__fc_raw_log10_stats.csv', 'Duke-YeastSTATES-Ethanol-Time-Series-LiveDeadClassification__fc_raw_events.json', 'Duke-YeastSTATES-Ethanol-Time-Series-LiveDeadClassification__fc_raw_log10_events.json']
+summarizing data sets...
+hashing data sets...
+MD5: d666ac0f0bbfcc193a580fc0a93df7a6
+MD5: a12db56a85f8b54d94a52da2cff52175
+MD5: f8debb00ec08c8bbcad62a103181bcd2
+MD5: 4322d0340b183dd5eb36e2fe3ab0f36b
+MD5: e33b744ee837ad35317d7d53e1db5126
+making experiment record...
+making product record...
+finished!
+passing archive_system step

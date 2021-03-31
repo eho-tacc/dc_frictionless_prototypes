@@ -1,0 +1,106 @@
+{
+  "data_converge version": "master 8b9cd62 2020-12-16 14:09:41 -0600",
+  "experiment_reference": "Duke-YeastSTATES-Ethanol-Time-Series-LiveDeadClassification",
+  "date_run": "20201217202901",
+  "output_dir": ".",
+  "tacc_path_type": "hpc_path",
+  "files": [
+    {
+      "name": "Duke-YeastSTATES-Ethanol-Time-Series-LiveDeadClassification__cfu.csv",
+      "summary_name": "Duke-YeastSTATES-Ethanol-Time-Series-LiveDeadClassification__cfu__summary.json",
+      "unique sample ids": 219,
+      "hash_md5": "d666ac0f0bbfcc193a580fc0a93df7a6"
+    },
+    {
+      "name": "Duke-YeastSTATES-Ethanol-Time-Series-LiveDeadClassification__fc_meta.csv",
+      "summary_name": "Duke-YeastSTATES-Ethanol-Time-Series-LiveDeadClassification__fc_meta__summary.json",
+      "unique sample ids": 125,
+      "hash_md5": "a12db56a85f8b54d94a52da2cff52175"
+    },
+    {
+      "name": "Duke-YeastSTATES-Ethanol-Time-Series-LiveDeadClassification__fc_raw_log10_stats.csv",
+      "summary_name": "Duke-YeastSTATES-Ethanol-Time-Series-LiveDeadClassification__fc_raw_log10_stats__summary.json",
+      "unique sample ids": 125,
+      "hash_md5": "f8debb00ec08c8bbcad62a103181bcd2"
+    },
+    {
+      "name": "Duke-YeastSTATES-Ethanol-Time-Series-LiveDeadClassification__fc_raw_events.json",
+      "summary_name": "Duke-YeastSTATES-Ethanol-Time-Series-LiveDeadClassification__fc_raw_events__summary.json",
+      "unique sample ids": 125,
+      "hash_md5": "4322d0340b183dd5eb36e2fe3ab0f36b"
+    },
+    {
+      "name": "Duke-YeastSTATES-Ethanol-Time-Series-LiveDeadClassification__fc_raw_log10_events.json",
+      "summary_name": "Duke-YeastSTATES-Ethanol-Time-Series-LiveDeadClassification__fc_raw_log10_events__summary.json",
+      "unique sample ids": 125,
+      "hash_md5": "e33b744ee837ad35317d7d53e1db5126"
+    }
+  ],
+  "status": {
+    "cfu": "ok. unique sample ids: 219",
+    "rna": "no records",
+    "pr": "no records",
+    "fc_etl": "no records",
+    "fc_raw": "ok. unique sample ids: 125"
+  },
+  "status_upstream": [
+    {
+      "experiment_id": "experiment.duke_haase.ethanol_20200826_CFU",
+      "data_types": "----C",
+      "comparison_passed": true
+    },
+    {
+      "experiment_id": "experiment.duke_haase.ethanol_20200826_FLOW",
+      "data_types": "-F---",
+      "comparison_passed": true
+    },
+    {
+      "experiment_id": "experiment.duke_haase.2020-09-01-Duke-YeastSTATES-Ethanol-Time-Series-LiveDeadClassification"
+    },
+    {
+      "experiment_id": "experiment.duke_haase.ethanol_20191209_CFU",
+      "data_types": "----C",
+      "comparison_passed": true
+    },
+    {
+      "experiment_id": "experiment.duke_haase.ethanol_20200911_CFU",
+      "data_types": "----C",
+      "comparison_passed": true
+    },
+    {
+      "experiment_id": "experiment.duke_haase.ethanol_20200911_FLOW",
+      "data_types": "-F---",
+      "comparison_passed": true
+    },
+    {
+      "experiment_id": "experiment.duke_haase.ethanol_20200915_FLOW",
+      "data_types": "-F---",
+      "comparison_passed": true
+    },
+    {
+      "experiment_id": "experiment.duke_haase.ethanol_20200915_CFU",
+      "data_types": "----C",
+      "comparison_passed": true
+    },
+    {
+      "experiment_id": "experiment.duke_haase.ethanol_20200916_FLOW",
+      "data_types": "-F---",
+      "comparison_passed": true
+    },
+    {
+      "experiment_id": "experiment.duke_haase.ethanol_20200916_CFU",
+      "data_types": "----C",
+      "comparison_passed": true
+    },
+    {
+      "experiment_id": "experiment.duke_haase.ethanol_20200922_FLOW",
+      "data_types": "-F---",
+      "comparison_passed": true
+    },
+    {
+      "experiment_id": "experiment.duke_haase.ethanol_20200922_CFU",
+      "data_types": "----C",
+      "comparison_passed": true
+    }
+  ]
+}
