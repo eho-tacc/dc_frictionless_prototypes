@@ -7,11 +7,17 @@ Validation was performed using [frictionless-py](https://github.com/frictionless
 ## Validate Using Frictionless CLI
 
 ```bash
-$ frictionless validate datapackage.json
+frictionless validate datapackage.json
 ```
 
 ## Pull Local Copy of Examplary Dataset
 
+NovelChassis-EcN-WT-1:
 ```bash
-$ scp -r eho@stampede2.tacc.utexas.edu:/work/projects/SD2E-Community/prod/projects/sd2e-project-43/reactor_outputs/complete/NovelChassis-EcN-WT-1/20210310165236 ./data
+scp -r eho@stampede2.tacc.utexas.edu:/work/projects/SD2E-Community/prod/projects/sd2e-project-43/reactor_outputs/complete/NovelChassis-EcN-WT-1/20210310165236 ./data
+```
+
+Duke-YeastSTATES-Ethanol-Time-Series-LiveDeadClassification:
+```bash
+scp -r eho@stampede2.tacc.utexas.edu:/work/projects/SD2E-Community/prod/projects/sd2e-project-43/reactor_outputs/preview/Duke-YeastSTATES-Ethanol-Time-Series-LiveDeadClassification/20201217201845 ./data
 ```
