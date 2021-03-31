@@ -21,3 +21,9 @@ Duke-YeastSTATES-Ethanol-Time-Series-LiveDeadClassification:
 ```bash
 scp -r eho@stampede2.tacc.utexas.edu:/work/projects/SD2E-Community/prod/projects/sd2e-project-43/reactor_outputs/preview/Duke-YeastSTATES-Ethanol-Time-Series-LiveDeadClassification/20201217201845 ./data
 ```
+
+YeastSTATES-Activator-Circuit-Dox-Growth-Curves-30C:
+```bash
+scp -r eho@stampede2.tacc.utexas.edu:/work/projects/SD2E-Community/prod/projects/sd2e-project-43/reactor_outputs/complete/YeastSTATES-Activator-Circuit-Dox-Growth-Curves-30C/20210211174214 ./data
+```
+
