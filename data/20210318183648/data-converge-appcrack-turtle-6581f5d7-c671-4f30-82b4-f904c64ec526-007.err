@@ -1,0 +1,51 @@
+INFO:    Using cached SIF image
+ERROR: ld.so: object '/opt/apps/xalt/xalt/lib64/libxalt_init.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/opt/apps/xalt/xalt/lib64/libxalt_init.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/opt/apps/xalt/xalt/lib64/libxalt_init.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/opt/apps/xalt/xalt/lib64/libxalt_init.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/opt/apps/xalt/xalt/lib64/libxalt_init.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object '/opt/apps/xalt/xalt/lib64/libxalt_init.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+/opt/conda/envs/sd2-data_converge/lib/python3.7/site-packages/pandas/core/series.py:726: RuntimeWarning: invalid value encountered in log10
+  result = getattr(ufunc, method)(*inputs, **kwargs)
+/opt/conda/envs/sd2-data_converge/lib/python3.7/site-packages/pandas/core/series.py:726: RuntimeWarning: divide by zero encountered in log10
+  result = getattr(ufunc, method)(*inputs, **kwargs)
+/data_converge/src/queries_sd2/process_data_fc.py:100: RuntimeWarning: invalid value encountered in log10
+  new_vals = np.round(np.log10(fc_events_df_tmp[channel].to_list()), decimals=round_log_decimal)
+/data_converge/src/queries_sd2/process_data_fc.py:100: RuntimeWarning: divide by zero encountered in log10
+  new_vals = np.round(np.log10(fc_events_df_tmp[channel].to_list()), decimals=round_log_decimal)
+Traceback (most recent call last):
+  File "/data_converge/src/data_converge/summarize_data.py", line 102, in summarize_data_json
+    data_df = pd.read_json(in_file_path, orient='records', lines=True)
+  File "/opt/conda/envs/sd2-data_converge/lib/python3.7/site-packages/pandas/util/_decorators.py", line 199, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/conda/envs/sd2-data_converge/lib/python3.7/site-packages/pandas/util/_decorators.py", line 296, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/conda/envs/sd2-data_converge/lib/python3.7/site-packages/pandas/io/json/_json.py", line 618, in read_json
+    result = json_reader.read()
+  File "/opt/conda/envs/sd2-data_converge/lib/python3.7/site-packages/pandas/io/json/_json.py", line 753, in read
+    obj = self._get_object_parser(self._combine_lines(data))
+  File "/opt/conda/envs/sd2-data_converge/lib/python3.7/site-packages/pandas/io/json/_json.py", line 777, in _get_object_parser
+    obj = FrameParser(json, **kwargs).parse()
+  File "/opt/conda/envs/sd2-data_converge/lib/python3.7/site-packages/pandas/io/json/_json.py", line 886, in parse
+    self._parse_no_numpy()
+  File "/opt/conda/envs/sd2-data_converge/lib/python3.7/site-packages/pandas/io/json/_json.py", line 1138, in _parse_no_numpy
+    loads(json, precise_float=self.precise_float), dtype=None
+ValueError: Could not reserve memory block
+Traceback (most recent call last):
+  File "/data_converge/src/data_converge/summarize_data.py", line 102, in summarize_data_json
+    data_df = pd.read_json(in_file_path, orient='records', lines=True)
+  File "/opt/conda/envs/sd2-data_converge/lib/python3.7/site-packages/pandas/util/_decorators.py", line 199, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/conda/envs/sd2-data_converge/lib/python3.7/site-packages/pandas/util/_decorators.py", line 296, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/conda/envs/sd2-data_converge/lib/python3.7/site-packages/pandas/io/json/_json.py", line 618, in read_json
+    result = json_reader.read()
+  File "/opt/conda/envs/sd2-data_converge/lib/python3.7/site-packages/pandas/io/json/_json.py", line 753, in read
+    obj = self._get_object_parser(self._combine_lines(data))
+  File "/opt/conda/envs/sd2-data_converge/lib/python3.7/site-packages/pandas/io/json/_json.py", line 777, in _get_object_parser
+    obj = FrameParser(json, **kwargs).parse()
+  File "/opt/conda/envs/sd2-data_converge/lib/python3.7/site-packages/pandas/io/json/_json.py", line 886, in parse
+    self._parse_no_numpy()
+  File "/opt/conda/envs/sd2-data_converge/lib/python3.7/site-packages/pandas/io/json/_json.py", line 1138, in _parse_no_numpy
+    loads(json, precise_float=self.precise_float), dtype=None
+ValueError: Could not reserve memory block

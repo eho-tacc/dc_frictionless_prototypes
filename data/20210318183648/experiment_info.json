@@ -1,0 +1,152 @@
+{
+  "_id": "5fc4fc33744cdaedfe522ed7",
+  "experiment_reference": "NovelChassis-Endogenous-Promoter",
+  "experiment_id": "experiment.transcriptic.2020-11-30-NovelChassis-Endogenous-Promoter",
+  "parameters": [
+    {
+      "induction_info|dil_volume": "60:microliter",
+      "induction_info|induction_reagents": {
+        "inducers": {
+          "Cuminic Acid": {
+            "induction_info|induction_reagents|inducer": {
+              "containerId": "ct1dvf92ph3h5tq",
+              "wellIndex": 0
+            },
+            "induction_info|induction_reagents|inducer_layout|inputs|select_cols|inducer_unit": "microgram/milliliter"
+          },
+          "IPTG": {
+            "induction_info|induction_reagents|inducer": {
+              "containerId": "ct1dvf8vpc92v7e",
+              "wellIndex": 0
+            },
+            "induction_info|induction_reagents|inducer_layout|inputs|select_cols|inducer_unit": "microgram/milliliter"
+          },
+          "iptg_and_cuminic_acid": {
+            "induction_info|induction_reagents|inducer": {
+              "containerId": "ct1dvmeg3rt4gqd",
+              "wellIndex": 0
+            },
+            "induction_info|induction_reagents|inducer_layout|inputs|select_cols|inducer_unit": "microgram/milliliter"
+          }
+        }
+      },
+      "induction_info|induction_reagents|media_vol": "1000:microliter",
+      "inoc_info|inc_time_1": "18:hour",
+      "inoc_info|inoc_media_vol": "1000:microliter",
+      "inoc_info|inoc_vol": "15:microliter",
+      "inoc_info|inoculation_media": "Modified M9 Media",
+      "plate_reader_info|fluor_em": "530:nanometer",
+      "plate_reader_info|fluor_ex": "488:nanometer",
+      "plate_reader_info|gain": 0.274,
+      "read_info|sampling_info|read_cult_vol": "100:microliter",
+      "read_info|sampling_info|read_solv": "PBS",
+      "read_info|sampling_info|read_solv_vol": "0:microliter",
+      "recovery_info|inc_time_2": "3:hour",
+      "recovery_info|recovery_media_vol": "400:microliter",
+      "recovery_info|recovery_sample_vol": "100:microliter",
+      "run_info|only_endpoint_flow": true,
+      "run_info|read_each_induction": true,
+      "run_info|read_each_recovery": true,
+      "run_info|save_for_rnaseq": false,
+      "run_info|skip_first_flow": true,
+      "validate_samples": false
+    }
+  ],
+  "overnight_growth": {
+    "unit": "hour",
+    "value": 18.0
+  },
+  "protocol": "TimeSeriesHTP",
+  "recovery_loops": [
+    {
+      "unit": "hour",
+      "value": 3.0
+    }
+  ],
+  "fc_channels": [
+    "RL1-A",
+    "FSC-A",
+    "FSC-H",
+    "FSC-W",
+    "SSC-A",
+    "SSC-H",
+    "SSC-W"
+  ],
+  "status_upstream": [
+    {
+      "experiment_id": "experiment.transcriptic.2020-11-30-NovelChassis-Endogenous-Promoter"
+    },
+    {
+      "experiment_id": "experiment.transcriptic.r1f7aux4qxty6b",
+      "data_types": "PF---",
+      "comparison_passed": true,
+      "etl_flow_status": "FINISHED"
+    },
+    {
+      "experiment_id": "experiment.transcriptic.r1f833szm3e3a6",
+      "data_types": "PF---",
+      "comparison_passed": true,
+      "etl_flow_status": "FINISHED"
+    },
+    {
+      "experiment_id": "experiment.transcriptic.r1f833ub7xn6vb",
+      "data_types": "PF---",
+      "comparison_passed": true,
+      "etl_flow_status": "FINISHED"
+    },
+    {
+      "experiment_id": "experiment.transcriptic.r1f7zwh6t4ekdm",
+      "data_types": "PF---",
+      "comparison_passed": true,
+      "etl_flow_status": "FINISHED"
+    },
+    {
+      "experiment_id": "experiment.transcriptic.r1f7zwjfh2af4v",
+      "data_types": "PF---",
+      "comparison_passed": true,
+      "etl_flow_status": "FINISHED"
+    },
+    {
+      "experiment_id": "experiment.transcriptic.r1f7aturvjk65q",
+      "data_types": "PF---",
+      "comparison_passed": true,
+      "etl_flow_status": "FINISHED"
+    },
+    {
+      "experiment_id": "experiment.transcriptic.r1fem4e25j5qqn",
+      "data_types": "PF---",
+      "comparison_passed": true,
+      "etl_flow_status": "FINISHED"
+    },
+    {
+      "experiment_id": "experiment.transcriptic.r1fem63zwnvhbg",
+      "data_types": "PF---",
+      "comparison_passed": true,
+      "etl_flow_status": "FINISHED"
+    },
+    {
+      "experiment_id": "experiment.transcriptic.r1fgm3xyt8vds9",
+      "data_types": "PF---",
+      "comparison_passed": true,
+      "etl_flow_status": "FINISHED"
+    },
+    {
+      "experiment_id": "experiment.transcriptic.r1fgm3zabaqbaw",
+      "data_types": "PF---",
+      "comparison_passed": true,
+      "etl_flow_status": "FINISHED"
+    },
+    {
+      "experiment_id": "experiment.transcriptic.r1fgmajbcfpf3q",
+      "data_types": "PF---",
+      "comparison_passed": true,
+      "etl_flow_status": "FINISHED"
+    },
+    {
+      "experiment_id": "experiment.transcriptic.r1fgmamvmd7sc2",
+      "data_types": "PF---",
+      "comparison_passed": true,
+      "etl_flow_status": "FINISHED"
+    }
+  ]
+}

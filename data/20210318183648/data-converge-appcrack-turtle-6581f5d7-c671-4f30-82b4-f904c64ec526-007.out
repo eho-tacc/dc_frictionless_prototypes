@@ -1,0 +1,26 @@
+container_exec sd2e/data-converge-app:0.7.2 /opt/conda/envs/sd2-data_converge/bin/python /data_converge/src/data_converge/run_data_converge.py NovelChassis-Endogenous-Promoter RL1-A FSC-A FSC-H FSC-W SSC-A SSC-H SSC-W . hpc_path --no_sub_dir
+/opt/apps/tacc-singularity/3.6.3/bin/singularity
+singularity exec: sd2e/data-converge-app:0.7.2 /opt/conda/envs/sd2-data_converge/bin/python /data_converge/src/data_converge/run_data_converge.py NovelChassis-Endogenous-Promoter RL1-A FSC-A FSC-H FSC-W SSC-A SSC-H SSC-W . hpc_path --no_sub_dir
+processing data sets...
+cfu :  no records
+[]
+rna :  no records
+[]
+pr :  ok. unique sample ids: 3920
+['NovelChassis-Endogenous-Promoter__platereader.csv']
+fc_etl :  ok. unique sample ids: 1804
+['NovelChassis-Endogenous-Promoter__fc_etl_events.json', 'NovelChassis-Endogenous-Promoter__fc_etl_stats.csv']
+fc_raw :  ok. unique sample ids: 1850
+['NovelChassis-Endogenous-Promoter__fc_meta.csv', 'NovelChassis-Endogenous-Promoter__fc_raw_log10_stats.csv', 'NovelChassis-Endogenous-Promoter__fc_raw_events.json', 'NovelChassis-Endogenous-Promoter__fc_raw_log10_events.json']
+summarizing data sets...
+hashing data sets...
+MD5: df1db02042c3b8894563148c2a189af5
+MD5: 2daa790cbd224c7904ce1edd2c07c727
+MD5: af445b339c6a9771f9707b28f1545c0e
+MD5: 9b178a426e46f39ebede2ba9f6f22201
+MD5: b57c9f87c8a6be6b5795a8098dc21a31
+MD5: cf729be8f27d466196ddffbfa92b4388
+MD5: 379627b326951c45fa02017bf5ecdc62
+making product record...
+finished!
+passing archive_system step

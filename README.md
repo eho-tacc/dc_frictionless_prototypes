@@ -32,4 +32,8 @@ NovelChassis-Bacillus-WT-Characterization:
 scp -r eho@stampede2.tacc.utexas.edu:/work/projects/SD2E-Community/prod/projects/sd2e-project-43/reactor_outputs/complete/NovelChassis-Bacillus-WT-Characterization/20201029172044 ./data
 ```
 
+NovelChassis-Endogenous-Promoter:
+```bash
+rsync -av --progress eho@stampede2.tacc.utexas.edu:/work/projects/SD2E-Community/prod/projects/sd2e-project-43/reactor_outputs/preview/NovelChassis-Endogenous-Promoter/20210318183648/ ./data --exclude "*events.json"
+```
 

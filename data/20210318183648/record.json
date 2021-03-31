@@ -1,0 +1,54 @@
+{
+  "data_converge version": "117-deploy-app-to-new-system 7874b92 2021-03-10 10:17:01 -0600",
+  "experiment_reference": "NovelChassis-Endogenous-Promoter",
+  "date_run": "20210320083324",
+  "output_dir": ".",
+  "tacc_path_type": "hpc_path",
+  "files": [
+    {
+      "name": "NovelChassis-Endogenous-Promoter__platereader.csv",
+      "summary_name": "NovelChassis-Endogenous-Promoter__platereader__summary.json",
+      "unique sample ids": 3920,
+      "hash_md5": "df1db02042c3b8894563148c2a189af5"
+    },
+    {
+      "name": "NovelChassis-Endogenous-Promoter__fc_etl_events.json",
+      "summary_name": "NovelChassis-Endogenous-Promoter__fc_etl_events__summary.json",
+      "unique sample ids": 1804,
+      "hash_md5": "2daa790cbd224c7904ce1edd2c07c727"
+    },
+    {
+      "name": "NovelChassis-Endogenous-Promoter__fc_etl_stats.csv",
+      "summary_name": "NovelChassis-Endogenous-Promoter__fc_etl_stats__summary.json",
+      "unique sample ids": 1804,
+      "hash_md5": "af445b339c6a9771f9707b28f1545c0e"
+    },
+    {
+      "name": "NovelChassis-Endogenous-Promoter__fc_meta.csv",
+      "summary_name": "NovelChassis-Endogenous-Promoter__fc_meta__summary.json",
+      "unique sample ids": 1850,
+      "hash_md5": "9b178a426e46f39ebede2ba9f6f22201"
+    },
+    {
+      "name": "NovelChassis-Endogenous-Promoter__fc_raw_log10_stats.csv",
+      "summary_name": "NovelChassis-Endogenous-Promoter__fc_raw_log10_stats__summary.json",
+      "unique sample ids": 1850,
+      "hash_md5": "b57c9f87c8a6be6b5795a8098dc21a31"
+    },
+    {
+      "name": "NovelChassis-Endogenous-Promoter__fc_raw_events.json",
+      "hash_md5": "cf729be8f27d466196ddffbfa92b4388"
+    },
+    {
+      "name": "NovelChassis-Endogenous-Promoter__fc_raw_log10_events.json",
+      "hash_md5": "379627b326951c45fa02017bf5ecdc62"
+    }
+  ],
+  "status": {
+    "cfu": "no records",
+    "rna": "no records",
+    "pr": "ok. unique sample ids: 3920",
+    "fc_etl": "ok. unique sample ids: 1804",
+    "fc_raw": "ok. unique sample ids: 1850"
+  }
+}

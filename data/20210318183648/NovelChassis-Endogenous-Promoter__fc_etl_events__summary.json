@@ -1,0 +1,40 @@
+{
+    "rows count": 1804,
+    "columns count": 8,
+    "entries count": 14432,
+    "count per column": {
+        "sample_id": 1804,
+        "FSC-A_Eum": 1804,
+        "SSC-A_a.u.": 1804,
+        "YL1-A_MEFL": 1804,
+        "FSC-H_a.u.": 1804,
+        "SSC-H_a.u.": 1804,
+        "FSC-W_a.u.": 1804,
+        "SSC-W_a.u.": 1804
+    },
+    "count unique per column (include NA)": {
+        "sample_id": 1804,
+        "FSC-A_Eum": 1804,
+        "SSC-A_a.u.": 1804,
+        "YL1-A_MEFL": 1804,
+        "FSC-H_a.u.": 1804,
+        "SSC-H_a.u.": 1804,
+        "FSC-W_a.u.": 1804,
+        "SSC-W_a.u.": 1804
+    },
+    "count unique per column (exclude NA)": {
+        "sample_id": 1804,
+        "FSC-A_Eum": 1804,
+        "SSC-A_a.u.": 1804,
+        "YL1-A_MEFL": 1804,
+        "FSC-H_a.u.": 1804,
+        "SSC-H_a.u.": 1804,
+        "FSC-W_a.u.": 1804,
+        "SSC-W_a.u.": 1804
+    },
+    "gb: experiment_id": null,
+    "gb: experiment_id,strain": null,
+    "gb: experiment_id,timepoint": null,
+    "gb: experiment_id,temperature": null,
+    "gb: experiment_id,inducer_concentration": null
+}
