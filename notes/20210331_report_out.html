@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title>20210331_report_out</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reset.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/theme/solarized.css" id="theme">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+<section>
+<section id="data-converge-frictionless-migration-report-out" class="title-slide slide level1">
+<h1>Data Converge Frictionless Migration Report Out</h1>
+
+</section>
+<section id="overall-goal" class="slide level2">
+<h2>Overall Goal</h2>
+<p>Prototype migration of Data Converge (DC) outputs to Frictionless.</p>
+</section>
+<section id="why-dc-before-pdt" class="slide level2">
+<h2>Why DC before PDT?</h2>
+<ul>
+<li>Data Converge (DC) pipeline was written by fewer authors than Precomputed Data Tables (PDT), and has a more stable schema.</li>
+<li>Neither has explicitly defined schemas, though they are implicit in the source code</li>
+</ul>
+</section>
+<section id="status-quo" class="slide level2">
+<h2>Status Quo</h2>
+<ul>
+<li>Two DC runs in the Data Package</li>
+<li>Passing validation</li>
+<li>Schemas inferred for all data types handled by DC:</li>
+</ul>
+<pre class="jsonc"><code>&quot;resources&quot;: [
+    {
+        &quot;name&quot;: &quot;platereader&quot;,
+        // ...
+        &quot;schema&quot;: &quot;schemas/dc_platereader.json&quot;,
+        &quot;description&quot;: &quot;Platereader data. Data type &#39;P&#39; in Experiment Analysis Dashboard.&quot;
+    },
+    {
+        &quot;name&quot;: &quot;rnaseq_meta&quot;,
+        // ...
+        &quot;schema&quot;: &quot;schemas/dc_rnaseq.json&quot;,
+        &quot;description&quot;: &quot;RNAseq data. Data type &#39;R&#39; in Experiment Analysis Dashboard.&quot;
+    },
+    {
+        &quot;name&quot;: &quot;cfu&quot;,
+        // ...
+        &quot;schema&quot;: &quot;schemas/cfu.json&quot;,
+        &quot;description&quot;: &quot;CFU data. Data type &#39;C&#39; in Experiment Analysis Dashboard.&quot;
+    },
+    {
+        &quot;name&quot;: &quot;fc_meta&quot;,
+        // ...
+        &quot;schema&quot;: &quot;schemas/fc_meta.json&quot;,
+        &quot;description&quot;: &quot;Flow cytometry metadata. Data type &#39;F&#39; in Experiment Analysis Dashboard.&quot;
+    },
+    {
+        &quot;name&quot;: &quot;fc_raw_log10_stats&quot;,
+        // ...
+        &quot;schema&quot;: &quot;./schemas/fc_raw_log10_stats.json&quot;,
+        &quot;description&quot;: &quot;Flow cytometry counts data. Data type &#39;F&#39; in Experiment Analysis Dashboard.&quot;
+    }
+]</code></pre>
+</section>
+<section id="pain-points" class="slide level2">
+<h2>Pain Points</h2>
+<ul>
+<li>DC outputs <strong>are not 1NF</strong></li>
+<li>For example, instance of <a href="https://jupyter.sd2e.org/user/%7buser%7d/edit/sd2e-projects/sd2e-project-43/reactor_outputs/complete/NovelChassis-Bacillus-WT-Characterization/20201029172044/NovelChassis-Bacillus-WT-Characterization__platereader.csv">duplicate primaryKey</a>:</li>
+</ul>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>$ <span class="ex">csvcut</span> -c <span class="st">&#39;sample_id,experiment_id,replicate,replicate_group,strain&#39;</span> data/20201029172044/NovelChassis-Bacillus-WT-Characterization__platereader.csv <span class="kw">|</span> <span class="ex">csvlook</span> --max-rows 2</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="kw">|</span> <span class="ex">sample_id</span>                                      <span class="kw">|</span> <span class="ex">experiment_id</span>           <span class="kw">|</span> <span class="ex">replicate</span> <span class="kw">|</span> <span class="ex">replicate_group</span>                          <span class="kw">|</span> <span class="ex">strain</span>       <span class="kw">|</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="kw">|</span> <span class="ex">----------------------------------------------</span> <span class="kw">|</span> <span class="ex">-----------------------</span> <span class="kw">|</span> <span class="ex">---------</span> <span class="kw">|</span> <span class="ex">----------------------------------------</span> <span class="kw">|</span> <span class="ex">------------</span> <span class="kw">|</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="kw">|</span> <span class="ex">sample.ginkgo.22181358.experiment.ginkgo.29649</span> <span class="kw">|</span> <span class="ex">experiment.ginkgo.29649</span> <span class="kw">|</span>         <span class="ex">1</span> <span class="kw">|</span> <span class="ex">ee9a613bc9af7a4e5adaab1fff7a39292ba6efea</span> <span class="kw">|</span> <span class="ex">MediaControl</span> <span class="kw">|</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="kw">|</span> <span class="ex">sample.ginkgo.22181358.experiment.ginkgo.29649</span> <span class="kw">|</span> <span class="ex">experiment.ginkgo.29649</span> <span class="kw">|</span>         <span class="ex">1</span> <span class="kw">|</span> <span class="ex">ee9a613bc9af7a4e5adaab1fff7a39292ba6efea</span> <span class="kw">|</span> <span class="ex">MediaControl</span> <span class="kw">|</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="kw">|</span> <span class="ex">...</span>  </span></code></pre></div>
+</section>
+<section id="downstream-propagation" class="slide level2">
+<h2>Downstream Propagation</h2>
+<p>Unfortunately but predictably, these issues propagate to the <a href="https://jupyter.sd2e.org/user/%7buser%7d/edit/sd2e-projects/sd2e-project-48/complete/NovelChassis-Bacillus-WT-Characterization/20201106211408/xplan-od-growth-analysis/pdt_NovelChassis-Bacillus-WT-Characterization__pr_growth_analysis.csv">downstream PDT analyses</a>:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>$ <span class="ex">csvcut</span> -c <span class="st">&#39;sample_id,experiment_id,replicate,replicate_group&#39;</span> data/20201029172044/pdt_NovelChassis-Bacillus-WT-Characterization__pr_growth_analysis_head.csv <span class="kw">|</span> <span class="ex">csvlook</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="kw">|</span> <span class="ex">sample_id</span>                                      <span class="kw">|</span> <span class="ex">experiment_id</span>           <span class="kw">|</span> <span class="ex">replicate</span> <span class="kw">|</span> <span class="ex">replicate_group</span>                          <span class="kw">|</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="kw">|</span> <span class="ex">----------------------------------------------</span> <span class="kw">|</span> <span class="ex">-----------------------</span> <span class="kw">|</span> <span class="ex">---------</span> <span class="kw">|</span> <span class="ex">----------------------------------------</span> <span class="kw">|</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="kw">|</span> <span class="ex">sample.ginkgo.22181362.experiment.ginkgo.29649</span> <span class="kw">|</span> <span class="ex">experiment.ginkgo.29649</span> <span class="kw">|</span>      <span class="ex">True</span> <span class="kw">|</span> <span class="ex">2d5da74bcfff4e714ab3b89b541d790bc20b3db2</span> <span class="kw">|</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="kw">|</span> <span class="ex">sample.ginkgo.22181362.experiment.ginkgo.29649</span> <span class="kw">|</span> <span class="ex">experiment.ginkgo.29649</span> <span class="kw">|</span>      <span class="ex">True</span> <span class="kw">|</span> <span class="ex">2d5da74bcfff4e714ab3b89b541d790bc20b3db2</span> <span class="kw">|</span></span></code></pre></div>
+</section>
+<section id="more-pain-points" class="slide level2">
+<h2>More Pain Points</h2>
+<p><a href="https://jupyter.sd2e.org/user/%7buser%7d/edit/sd2e-projects/sd2e-project-43/reactor_outputs/preview/NovelChassis-Endogenous-Promoter/20210318183648/NovelChassis-Endogenous-Promoter__fc_etl_stats.csv">Field duplication due to Python float precision</a>:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>$ <span class="ex">csvcut</span> -n ./data/20210318183648/NovelChassis-Endogenous-Promoter__fc_etl_stats.csv</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co"># shows columns in CSV</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="ex">1</span>: sample_id</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="ex">...</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a> <span class="ex">10</span>: bin_-0.9499999999999998</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a> <span class="ex">11</span>: bin_-0.8500000000000001</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a> <span class="ex">12</span>: bin_-0.7499999999999999</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a> <span class="ex">13</span>: bin_-0.6499999999999998</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a> <span class="ex">14</span>: bin_-0.5499999999999999</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a> <span class="ex">15</span>: bin_-0.4499999999999999</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a> <span class="ex">16</span>: bin_-0.34999999999999987</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a> <span class="ex">17</span>: bin_-0.24999999999999992</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a> <span class="ex">18</span>: bin_-0.15</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a> <span class="ex">19</span>: bin_-0.04999999999999998</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="ex">...</span></span></code></pre></div>
+</section>
+<section id="pain-points-continued" class="slide level2">
+<h2>Pain Points Continued</h2>
+<ul>
+<li>These are fixable!</li>
+<li>No workaround I know of besides:
+<ul>
+<li>Fix normalization error ≥twice, in both upstream (DC) and downstream (PDT)</li>
+<li>Fix upstream and rerun all downstream</li>
+</ul></li>
+<li>But it leaves one to wonder what the depth and breadth of these normalization issues are</li>
+<li>This makes it difficult to assess cost of paying off the technical debt</li>
+</ul>
+</section>
+<section id="long-story-short" class="slide level2">
+<h2>Long story short…</h2>
+<p>In order to transition the entire corpus of DC or PDT outputs to a small number of schemas…</p>
+<p>…one must first pay the <strong>data normalization toll</strong></p>
+<figure>
+<img data-src="https://external-preview.redd.it/1XFssZg0rSpHWBC04TIC2XIHk-R9Up8-pj2UGDoSUk0.jpg?width=960&amp;crop=smart&amp;auto=webp&amp;s=4b13d2187dd8c26e2c0375e34e212fd9ed7dd300" alt="Troll bridge" /><figcaption aria-hidden="true">Troll bridge</figcaption>
+</figure>
+</section>
+<section id="cli-ideas" class="slide level2">
+<h2>CLI Ideas</h2>
+<ul>
+<li>Going through this process twice sparked some ideas about how we could harden this workflow.</li>
+<li>In the case of DC, the goal is essentially to glob for <code>*.csv</code> in a set of <code>archivePath</code>s, and include these paths in the field <code>resources[].path</code></li>
+<li>If the files are local, Frictionless makes this easy thanks to globbing:</li>
+</ul>
+<pre class="jsonc"><code>&quot;resources&quot;: [
+    {
+        &quot;path&quot;: &quot;data/**/*platereader.csv&quot;,
+        &quot;name&quot;: &quot;platereader&quot;
+        // ...</code></pre>
+</section>
+<section id="cli-ideas-1" class="slide level2">
+<h2>CLI Ideas</h2>
+<ul>
+<li>If we want to integrate with remote files via Tapis, we could assume the directory structure from <code>builder init</code></li>
+</ul>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">datasets</span> builder add agave://data-sd2e-projects.sd2e-project-43/path/to/rnaseq.csv</span></code></pre></div>
+<ol type="1">
+<li>Pull using <code>tapis files download</code></li>
+<li>Infer schema</li>
+<li>Add a new Resource to the <code>datapackage.json</code></li>
+</ol>
+</section>
+<section id="next-steps" class="slide level2">
+<h2>Next Steps</h2>
+<ul>
+<li>Starting from minimum viable (single experiment result in Package), demo the Frictionless SQL interface.</li>
+<li>SQL toolbox might help with normalization woes, though I’m not optimistic</li>
+</ul>
+</section></section>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/reveal.js@^4//dist/reveal.js"></script>
+
+  // reveal.js plugins
+  <script src="https://unpkg.com/reveal.js@^4//plugin/notes/notes.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/search/search.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/zoom/zoom.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+
+        // reveal.js plugins
+        plugins: [
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    </body>
+</html>
