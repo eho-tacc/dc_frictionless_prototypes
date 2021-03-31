@@ -17,8 +17,7 @@
     "resources": [
         {
             "path": [
-                "data/20210310165236/NovelChassis-EcN-WT-1__platereader.csv",
-                "data/20210211174214/YeastSTATES-Activator-Circuit-Dox-Growth-Curves-30C__platereader.csv"
+                "data/20210310165236/NovelChassis-EcN-WT-1__platereader.csv"
             ],
             "name": "platereader",
             "profile": "tabular-data-resource",
