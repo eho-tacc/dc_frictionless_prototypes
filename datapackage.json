@@ -23,7 +23,8 @@
             "format": "csv",
             "hashing": "md5",
             "encoding": "utf-8",
-            "schema": "schemas/dc_platereader.json"
+            "schema": "schemas/dc_platereader.json",
+            "description": "Platereader data. Data type 'P' in Experiment Analysis Dashboard."
         },
         {
             "path": "data/20210310165236/NovelChassis-EcN-WT-1__rnaseq_meta.csv",
@@ -33,7 +34,8 @@
             "format": "csv",
             "hashing": "md5",
             "encoding": "utf-8",
-            "schema": "schemas/dc_rnaseq.json"
+            "schema": "schemas/dc_rnaseq.json",
+            "description": "RNAseq data. Data type 'R' in Experiment Analysis Dashboard."
         },
         {
             "path": "data/20201217201845/Duke-YeastSTATES-Ethanol-Time-Series-LiveDeadClassification__cfu.csv",
@@ -43,7 +45,8 @@
             "format": "csv",
             "hashing": "md5",
             "encoding": "utf-8",
-            "schema": "schemas/cfu.json"
+            "schema": "schemas/cfu.json",
+            "description": "CFU data. Data type 'C' in Experiment Analysis Dashboard."
         },
         {
             "path": "data/20201217201845/Duke-YeastSTATES-Ethanol-Time-Series-LiveDeadClassification__fc_meta.csv",
@@ -53,7 +56,8 @@
             "format": "csv",
             "hashing": "md5",
             "encoding": "utf-8",
-            "schema": "schemas/fc_meta.json"
+            "schema": "schemas/fc_meta.json",
+            "description": "Flow cytometry metadata. Data type 'F' in Experiment Analysis Dashboard."
         },
         {
             "path": "data/20201217201845/Duke-YeastSTATES-Ethanol-Time-Series-LiveDeadClassification__fc_raw_log10_stats.csv",
@@ -63,7 +67,8 @@
             "format": "csv",
             "hashing": "md5",
             "encoding": "utf-8",
-            "schema": "./schemas/fc_raw_log10_stats.json"
+            "schema": "./schemas/fc_raw_log10_stats.json",
+            "description": "Flow cytometry counts data. Data type 'F' in Experiment Analysis Dashboard."
         }
     ]
 }
