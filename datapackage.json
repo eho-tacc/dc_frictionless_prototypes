@@ -1,9 +1,13 @@
 {
     "name": "sd2e/dc-novelchassis-ecn-wt-1",
     "created": "2021-03-23",
-    "keywords": ["data converge"],
+    "keywords": [
+        "data converge"
+    ],
     "version": "1",
-    "contributors": ["Ethan Ho"],
+    "contributors": [
+        "Ethan Ho"
+    ],
     "image": "",
     "profile": "data-package",
     "_datasets": {
@@ -30,6 +34,36 @@
             "hashing": "md5",
             "encoding": "utf-8",
             "schema": "schemas/dc_rnaseq.json"
+        },
+        {
+            "path": "data/20201217201845/Duke-YeastSTATES-Ethanol-Time-Series-LiveDeadClassification__cfu.csv",
+            "name": "cfu",
+            "profile": "tabular-data-resource",
+            "scheme": "file",
+            "format": "csv",
+            "hashing": "md5",
+            "encoding": "utf-8",
+            "schema": "schemas/cfu.json"
+        },
+        {
+            "path": "data/20201217201845/Duke-YeastSTATES-Ethanol-Time-Series-LiveDeadClassification__fc_meta.csv",
+            "name": "fc_meta",
+            "profile": "tabular-data-resource",
+            "scheme": "file",
+            "format": "csv",
+            "hashing": "md5",
+            "encoding": "utf-8",
+            "schema": "schemas/fc_meta.json"
+        },
+        {
+            "path": "data/20201217201845/Duke-YeastSTATES-Ethanol-Time-Series-LiveDeadClassification__fc_raw_log10_stats.csv",
+            "name": "fc_raw_log10_stats",
+            "profile": "tabular-data-resource",
+            "scheme": "file",
+            "format": "csv",
+            "hashing": "md5",
+            "encoding": "utf-8",
+            "schema": "./schemas/fc_raw_log10_stats.json"
         }
     ]
 }
