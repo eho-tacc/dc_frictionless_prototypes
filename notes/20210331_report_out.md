@@ -111,7 +111,29 @@ In order to transition the entire corpus of DC or PDT outputs to a small number 
 
 ![Troll bridge](https://external-preview.redd.it/1XFssZg0rSpHWBC04TIC2XIHk-R9Up8-pj2UGDoSUk0.jpg?width=960&crop=smart&auto=webp&s=4b13d2187dd8c26e2c0375e34e212fd9ed7dd300)
 
-## CLI Ideas
+## The Good News
+
+- (Unlike VDR) DC authors Rob Moseley and Anastasia Deckard are on board with standardization
+- I believe they are only interested in standardizing _future_ datasets, not correcting _historical_
+    - Will get clarification/confirmation today from Anastasia
+- Costly effort
+- Prototype for more hands-on migration
+
+## Possible Next Steps
+
+1. Explore Frictionless SQL
+    - 1 week
+    - Starting from minimum viable (1-2 experiment results in Package), demo the Frictionless SQL interface.
+    - SQL toolbox might help with normalization woes, though I'm not optimistic
+
+## Possible Next Steps (cont.)
+
+2. In collaboration with DC authors, standardize future & historical DC outputs
+    - Much more costly, ETA is on order of months
+    - Unclear if & how we could propagate changes to downstream PDT
+3. Harden boilerplate Package generation into `datasets` CLI
+
+## CLI Ideas: `datasets add`
 
 - Going through this process twice sparked some ideas about how we could harden this workflow.
 - In the case of DC, the goal is essentially to glob for `*.csv` in a set of `archivePath`s, and include these paths in the field `resources[].path`
@@ -124,7 +146,7 @@ In order to transition the entire corpus of DC or PDT outputs to a small number 
         // ...
 ```
 
-## CLI Ideas
+## CLI Ideas: `datasets add`
 
 - If we want to integrate with remote files via Tapis, we could assume the directory structure from `builder init`
 ```bash
@@ -134,7 +156,17 @@ datasets builder add agave://data-sd2e-projects.sd2e-project-43/path/to/rnaseq.c
 2. Infer schema
 3. Add a new Resource to the `datapackage.json`
 
-## Next Steps
+## Alternative: frictionless-agave
 
-- Starting from minimum viable (single experiment result in Package), demo the Frictionless SQL interface.
-- SQL toolbox might help with normalization woes, though I'm not optimistic
+-`datapackage.json`
+```jsonc
+"path": "agave://path/to/file.txt",
+"scheme": "agave"
+```
+- Validation throws:
+```bash
+scheme-error  The data source could not be successfully loaded: cannot create loader "agave". Try installing "frictionless-agave"
+```
+- `Loader`s are extensible via subclassing
+    - [`LocalLoader`](https://github.com/frictionlessdata/frictionless-py/blob/main/frictionless/plugins/local.py) is a good example
+

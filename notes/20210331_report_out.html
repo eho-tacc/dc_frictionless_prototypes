@@ -205,8 +205,42 @@
 <img data-src="https://external-preview.redd.it/1XFssZg0rSpHWBC04TIC2XIHk-R9Up8-pj2UGDoSUk0.jpg?width=960&amp;crop=smart&amp;auto=webp&amp;s=4b13d2187dd8c26e2c0375e34e212fd9ed7dd300" alt="Troll bridge" /><figcaption aria-hidden="true">Troll bridge</figcaption>
 </figure>
 </section>
-<section id="cli-ideas" class="slide level2">
-<h2>CLI Ideas</h2>
+<section id="the-good-news" class="slide level2">
+<h2>The Good News</h2>
+<ul>
+<li>(Unlike VDR) DC authors Rob Moseley and Anastasia Deckard are on board with standardization</li>
+<li>I believe they are only interested in standardizing <em>future</em> datasets, not correcting <em>historical</em>
+<ul>
+<li>Will get clarification/confirmation today from Anastasia</li>
+</ul></li>
+<li>Costly effort</li>
+<li>Prototype for more hands-on migration</li>
+</ul>
+</section>
+<section id="possible-next-steps" class="slide level2">
+<h2>Possible Next Steps</h2>
+<ol type="1">
+<li>Explore Frictionless SQL
+<ul>
+<li>1 week</li>
+<li>Starting from minimum viable (1-2 experiment results in Package), demo the Frictionless SQL interface.</li>
+<li>SQL toolbox might help with normalization woes, though I’m not optimistic</li>
+</ul></li>
+</ol>
+</section>
+<section id="possible-next-steps-cont." class="slide level2">
+<h2>Possible Next Steps (cont.)</h2>
+<ol start="2" type="1">
+<li>In collaboration with DC authors, standardize future &amp; historical DC outputs
+<ul>
+<li>Much more costly, ETA is on order of months</li>
+<li>Unclear if &amp; how we could propagate changes to downstream PDT</li>
+</ul></li>
+<li>Harden boilerplate Package generation into <code>datasets</code> CLI</li>
+</ol>
+</section>
+<section id="cli-ideas-datasets-add" class="slide level2">
+<h2>CLI Ideas: <code>datasets add</code></h2>
 <ul>
 <li>Going through this process twice sparked some ideas about how we could harden this workflow.</li>
 <li>In the case of DC, the goal is essentially to glob for <code>*.csv</code> in a set of <code>archivePath</code>s, and include these paths in the field <code>resources[].path</code></li>
@@ -218,8 +252,8 @@
         &quot;name&quot;: &quot;platereader&quot;
         // ...</code></pre>
 </section>
-<section id="cli-ideas-1" class="slide level2">
-<h2>CLI Ideas</h2>
+<section id="cli-ideas-datasets-add-1" class="slide level2">
+<h2>CLI Ideas: <code>datasets add</code></h2>
 <ul>
 <li>If we want to integrate with remote files via Tapis, we could assume the directory structure from <code>builder init</code></li>
 </ul>
@@ -230,11 +264,20 @@
 <li>Add a new Resource to the <code>datapackage.json</code></li>
 </ol>
 </section>
-<section id="next-steps" class="slide level2">
-<h2>Next Steps</h2>
+<section id="alternative-frictionless-agave" class="slide level2">
+<h2>Alternative: frictionless-agave</h2>
+<p>-<code>datapackage.json</code></p>
+<pre class="jsonc"><code>&quot;path&quot;: &quot;agave://path/to/file.txt&quot;,
+&quot;scheme&quot;: &quot;agave&quot;</code></pre>
 <ul>
-<li>Starting from minimum viable (single experiment result in Package), demo the Frictionless SQL interface.</li>
-<li>SQL toolbox might help with normalization woes, though I’m not optimistic</li>
+<li>Validation throws:</li>
+</ul>
+<div class="sourceCode" id="cb8"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ex">scheme-error</span>  The data source could not be successfully loaded: cannot create loader <span class="st">&quot;agave&quot;</span>. Try installing <span class="st">&quot;frictionless-agave&quot;</span></span></code></pre></div>
+<ul>
+<li><code>Loader</code>s are extensible via subclassing
+<ul>
+<li><a href="https://github.com/frictionlessdata/frictionless-py/blob/main/frictionless/plugins/local.py"><code>LocalLoader</code></a> is a good example</li>
+</ul></li>
 </ul>
 </section></section>
     </div>
